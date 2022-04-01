@@ -1,0 +1,25 @@
+<div class="card card-body p-4 rounded-50 shadow " style="border-radius: 30px;">
+    <h3>Añade una nueva tarea</h3>
+    <form action="/tasks/add" method="post">
+        <div class="input-group">
+            <span class="input-group-text" id="basic-addon1">T</span>
+            <input type="text" class="form-control" placeholder="Ingresa el titulo" name="title" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group" style="margin-top: 20px;">
+            <span class="input-group-text" id="basic-addon1">D</span>
+            <textarea type="text" class="form-control" placeholder="Ingresa descripcion" name="description" aria-describedby="basic-addon1"></textarea>
+        </div>
+            <label for="sexo" class="form-label">Sexo</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sexo" id="flexRadioDefault1" value="hombre">
+            <label class="form-check-label" for="flexRadioDefault1">hombre</label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="sexo" id="flexRadioDefault2" value="mujer">
+        <label class="form-check-label" for="flexRadioDefault2">
+            mujer
+        </label>
+        </div>
+        <button style="border-radius: 50%; vertical-align:middle; position: absolute; bottom: 20px; right: 20px"  type="submit" class="btn btn-primary">+</button>
+    </form>
+</div>

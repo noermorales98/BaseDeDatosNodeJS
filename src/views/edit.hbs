@@ -1,0 +1,23 @@
+<div class="container">
+    <div>
+        <div class="card card-body p-4 rounded-50 shadow " style="border-radius: 30px; width:  100%; margin-top:30px;">
+            <h3>Add a Tasks</h3>
+            <form action="/tasks/{{task._id}}/edit" method="post">
+            <div class="mb-3">
+                <label for="title" class="form-label">Write a title:</label>
+                <input type="text" class="form-control" id="title" placeholder="Title" name="title" value="{{task.title}}"/>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="description" cols="80" name="description" placeholder="Add a description">{{task.description}}</textarea>
+            </div>
+            <div class="mb-3">
+                <input type="radio" name="transporte" value="Hombre">Hombre
+                <br>
+                <input type="radio" name="transporte" value="Mujer">Mujer
+            </div>
+            <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+        </div>
+    </div>
+</div>
