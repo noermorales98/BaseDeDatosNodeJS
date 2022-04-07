@@ -8,6 +8,10 @@ HTML
 CSS
 JS
 
+Home             |  List
+:-------------------------:|:-------------------------:
+![](images/home.png)  |  ![](images/list.png)
+
 Express & Handlebars(es HTML con codigo de programación)
 
 mongoose -> conexion a la DB MongoDB
